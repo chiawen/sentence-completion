@@ -1,5 +1,5 @@
 """
-The data required for this code can be download from https://goo.gl/9jIYDd
+The data required for this code can be download from https://drive.google.com/open?id=0B5eGOMdyHn2mWDYtQzlQeGNKa2s 
 $tar -xvzf training_data.tgz
 
 """
@@ -46,7 +46,7 @@ def main():
                         help='minibatch size')
     parser.add_argument('--seq_length', type=int, default=40,
                        help='RNN sequence length')
-    parser.add_argument('--num_epochs', type=int, default=4,
+    parser.add_argument('--num_epochs', type=int, default=8,
                        help='number of epochs')
     parser.add_argument('--save_every', type=int, default=1000,
                        help='save frequency' )
