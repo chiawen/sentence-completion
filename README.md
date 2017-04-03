@@ -31,9 +31,9 @@ Please extract the training data and store them inside the `./data` directory.<b
 
 ### Total Word Similarity with [Google's pretrained word vectors](https://code.google.com/archive/p/word2vec/) (Word2vec Total Similarity)
 - `word2vec_similarity.py`
-
+<br/>
 I recommend to look at Platt's [Computational Approaches to Sentence Completion](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/semco.pdf) paper.
-
+<br/>
 ## Basic Usage
 To train the RNNLM model with default parameters, run:
 ```
@@ -43,26 +43,28 @@ To generate a csv file of predictions from the latest saved checkpoint:
 ```
 python3 inference.py
 ```
+<br/>
 Train and output predictions using the LSA Total Similarity model:
 ```
 python3 lsa_simlarity.py
 ```
+<br/>
 Train and output predictions using the Word2vec Total Similarity model:
 ```
 python3 word2vec_similarity.py
 ```
-
+<br/>
 Calculate the average precision of predictions:
 ```
 python3 acc.py -i [path_to_prediction_file]
 ```
-
+<br/>
 ## Pretrained Model
 Generate predictions of the test set using pretrained RNN model:
 ```
 bash ./run.sh
 ```
-
+<br/>
 ## Performance
 |Method|Test|
 |:---:|:---:|
