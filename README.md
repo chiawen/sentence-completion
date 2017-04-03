@@ -15,10 +15,10 @@ Code of RNN language model borrows heaveily from [word-rnn-tensorflow](https://g
 ## Data
 Training and Test data set can be downloaded from the following link: <br/>
 https://drive.google.com/open?id=0B5eGOMdyHn2mWDYtQzlQeGNKa2s <br/>
-Please extract the files and store them inside the `./data` directory.<br/> 
-<br/>
-Google's pretrained word vectors can be downloaded here: [GoogleNews-vectors-negative300.bin.gz](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit)
+Google's pretrained word vectors can be downloaded here: [GoogleNews-vectors-negative300.bin.gz](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit) <br/>
 
+Please extract the training data and store them inside the `./data` directory.<br/> 
+<br/>
 ## Overview of Models
 ### Recurrent Neural Netowrk Language Model (RNNLM)
 - `utils.py`
@@ -55,6 +55,12 @@ python3 word2vec_similarity.py
 Calculate the average precision of predictions:
 ```
 python3 acc.py -i [path_to_prediction_file]
+```
+
+## Pretrained Model
+Generate predictions of the test set using pretrained RNN model:
+```
+bash ./run.sh
 ```
 
 ## Performance
