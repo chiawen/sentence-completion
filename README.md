@@ -4,31 +4,33 @@ These are Python3/Tensorflow implementations for MSR Sentence Completion Challen
 Code of RNN language model borrows heaveily from [word-rnn-tensorflow](https://github.com/hunkim/word-rnn-tensorflow).
 
 ## Requirements
--Python3
--Numpy
--Tensorflow 1.0
--NLTK 3.2.1
--SciPy
--scikit-learn
--gensim
+- Python3
+- Numpy
+- Tensorflow 1.0
+- NLTK 3.2.1
+- SciPy
+- scikit-learn
+- gensim
 
 ## Data
 Training and Test data set can be downloaded from the following link: <br/>
 https://drive.google.com/open?id=0B5eGOMdyHn2mWDYtQzlQeGNKa2s <br/>
-Please extract the files and store them inside the `./data` directory. 
+Please extract the files and store them inside the `./data` directory.<br/> 
+<br/>
+Google's pretrained word vectors can be downloaded here: [GoogleNews-vectors-negative300.bin.gz](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit)
 
 ## Overview of Models
 ### Recurrent Neural Netowrk Language Model (RNNLM)
--`utils.py`
--`model.py`
--`train.py`
--`inference.py`
+- `utils.py`
+- `model.py`
+- `train.py`
+- `inference.py`
 
 ### Total Word Similarity with Latent Semantic Analysis (LSA Total Simlilarity )
--`lsa_similariy.py`
+- `lsa_similariy.py`
 
 ### Total Word Similarity with [Google's pretrained word vectors](https://code.google.com/archive/p/word2vec/) (Word2vec Total Similarity)
--`word2vec_similarity.py`
+- `word2vec_similarity.py`
 
 I recommend to look at Platt's [Computational Approaches to Sentence Completion](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/semco.pdf) paper.
 
